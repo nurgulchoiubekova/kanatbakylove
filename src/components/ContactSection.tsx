@@ -19,7 +19,7 @@ export const ContactSection: React.FC = () => {
         {/* WhatsApp Floating Button with Flower Icon */}
         <div className="relative mb-2">
           {/* Burgundy Flower Decoration behind WhatsApp icon */}
-          <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border-2 border-[#D4AF37] flex items-center justify-center mb-4 mx-auto">
+          <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border-2 border-[#C48B9F] flex items-center justify-center mb-4 mx-auto">
             <Heart className="w-8 h-8 text-[#8B1E3F] fill-[#8B1E3F]" />
           </div>
 

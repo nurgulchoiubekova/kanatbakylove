@@ -36,7 +36,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
         particleCount: 60,
         spread: 80,
         origin: { y: 0.7 },
-        colors: ['#D4AF37', '#FFD700', '#8B1E3F', '#FCF6BA'],
+        colors: ['#C48B9F', '#FFD700', '#8B1E3F', '#FFF7F4'],
       });
     }
 
@@ -53,7 +53,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
       <div className="rounded-3xl royal-card p-8 relative overflow-hidden">
         {/* Top Flower Illustration Ornament */}
         <div className="flex justify-center mb-2">
-          <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border border-[#D4AF37] flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border border-[#C48B9F] flex items-center justify-center">
             <Heart className="w-8 h-8 text-[#8B1E3F] fill-[#8B1E3F]" />
           </div>
         </div>
@@ -86,7 +86,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
 
             <button
               onClick={() => setIsSubmitted(false)}
-              className="mt-4 px-6 py-2 rounded-full border border-[#D4AF37] text-[#8B1E3F] text-xs font-sans-clean font-semibold uppercase tracking-wider hover:bg-[#8B1E3F]/5"
+              className="mt-4 px-6 py-2 rounded-full border border-[#C48B9F] text-[#8B1E3F] text-xs font-sans-clean font-semibold uppercase tracking-wider hover:bg-[#8B1E3F]/5"
             >
               Жоопту өзгөртүү
             </button>
@@ -103,7 +103,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
                 placeholder="аты"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3.5 rounded-2xl bg-white border-2 border-[#D4AF37]/50 text-[#3D0914] placeholder-[#8B1E3F]/40 focus:outline-none focus:border-[#8B1E3F] font-serif-title text-lg shadow-sm"
+                className="w-full px-4 py-3.5 rounded-2xl bg-white border-2 border-[#C48B9F]/50 text-[#3D0914] placeholder-[#8B1E3F]/40 focus:outline-none focus:border-[#8B1E3F] font-serif-title text-lg shadow-sm"
               />
               {errorMsg && (
                 <p className="text-xs text-red-600 font-sans-clean mt-1 font-medium">{errorMsg}</p>
@@ -122,7 +122,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
                   className={`flex items-center gap-3 p-4 rounded-2xl border-2 cursor-pointer transition-all ${
                     attending
                       ? 'bg-[#8B1E3F]/10 border-[#8B1E3F] text-[#5C0E20] font-bold shadow-sm'
-                      : 'bg-white border-[#D4AF37]/40 text-[#3D0914]'
+                      : 'bg-white border-[#C48B9F]/40 text-[#3D0914]'
                   }`}
                 >
                   <div
@@ -140,7 +140,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
                   className={`flex items-center gap-3 p-4 rounded-2xl border-2 cursor-pointer transition-all ${
                     !attending
                       ? 'bg-[#8B1E3F]/10 border-[#8B1E3F] text-[#5C0E20] font-bold shadow-sm'
-                      : 'bg-white border-[#D4AF37]/40 text-[#3D0914]'
+                      : 'bg-white border-[#C48B9F]/40 text-[#3D0914]'
                   }`}
                 >
                   <div
@@ -164,7 +164,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
                   Адамдын саны:
                 </label>
 
-                <div className="flex items-center justify-center gap-6 p-3 rounded-2xl bg-white border-2 border-[#D4AF37]/50 max-w-xs mx-auto shadow-sm">
+                <div className="flex items-center justify-center gap-6 p-3 rounded-2xl bg-white border-2 border-[#C48B9F]/50 max-w-xs mx-auto shadow-sm">
                   <button
                     type="button"
                     onClick={() => setGuestCount(Math.max(1, guestCount - 1))}
@@ -191,9 +191,9 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-4 px-6 rounded-2xl burgundy-gradient-bg text-[#FCF6BA] font-serif-title text-xl font-bold tracking-wider shadow-lg hover:shadow-xl border border-[#D4AF37] transition-all flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
+              className="w-full py-4 px-6 rounded-2xl burgundy-gradient-bg text-[#FFF7F4] font-serif-title text-xl font-bold tracking-wider shadow-lg hover:shadow-xl border border-[#C48B9F] transition-all flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
             >
-              <Send className="w-5 h-5 text-[#FCF6BA]" />
+              <Send className="w-5 h-5 text-[#FFF7F4]" />
               <span>жиберүү</span>
             </button>
           </form>
