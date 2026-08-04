@@ -207,7 +207,7 @@ export class RomanticMusicPlayer {
       { note: 392.00, duration: 2.4 }, // G4
     ];
 
-    const current = notes[index % notes.length];
+    const current = notes[index % notes.length]!;
     const now = this.ctx.currentTime;
 
     const osc = this.ctx.createOscillator();
