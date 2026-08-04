@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play, Sparkles } from 'lucide-react';
-import heroImage from '@/assets/hero-invitation.jpg.asset.json';
+import heroImage from '../assets/hero-invitation.jpg.asset.json';
 
 interface HeroVideoProps {
   isMusicPlaying: boolean;
