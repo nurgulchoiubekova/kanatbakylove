@@ -36,7 +36,7 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ onRSVPSubmitted }) => {
         particleCount: 60,
         spread: 80,
         origin: { y: 0.7 },
-        colors: ['#C48B9F', '#FFD700', '#8B1E3F', '#FFF7F4'],
+        colors: ['#C48B9F', '#E6C3C9', '#8B1E3F', '#FFF7F4'],
       });
     }
 

@@ -27,7 +27,7 @@ export const Envelope3D: React.FC<Envelope3DProps> = ({ onOpen, isOpen }) => {
         angle: 60,
         spread: 80,
         origin: { x: 0.2, y: 0.5 },
-        colors: ['#C48B9F', '#FFD700', '#FFF7F4', '#AA771C', '#8B1E3F'],
+        colors: ['#C48B9F', '#E6C3C9', '#FFF7F4', '#B76E79', '#8B1E3F'],
         shapes: ['circle', 'square'],
         scalar: 1.2,
       });
@@ -36,7 +36,7 @@ export const Envelope3D: React.FC<Envelope3DProps> = ({ onOpen, isOpen }) => {
         angle: 120,
         spread: 80,
         origin: { x: 0.8, y: 0.5 },
-        colors: ['#C48B9F', '#FFD700', '#FFF7F4', '#AA771C', '#8B1E3F'],
+        colors: ['#C48B9F', '#E6C3C9', '#FFF7F4', '#B76E79', '#8B1E3F'],
         shapes: ['circle', 'square'],
         scalar: 1.2,
       });
@@ -131,7 +131,7 @@ export const Envelope3D: React.FC<Envelope3DProps> = ({ onOpen, isOpen }) => {
                 isOpening ? 'scale-125 opacity-0' : 'animate-seal hover:scale-105'
               }`}
               style={{
-                boxShadow: '0 12px 30px rgba(88, 11, 29, 0.8), 0 0 25px rgba(212, 175, 55, 0.6), inset 0 2px 8px rgba(255, 255, 255, 0.4)'
+                boxShadow: '0 12px 30px rgba(110, 16, 35, 0.35), 0 0 22px rgba(196, 139, 159, 0.5), inset 0 2px 8px rgba(255, 255, 255, 0.4)'
               }}
             >
               {/* Outer Seal Metallic Rim */}
