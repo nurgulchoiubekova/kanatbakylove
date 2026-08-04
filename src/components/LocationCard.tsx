@@ -15,7 +15,7 @@ export const LocationCard: React.FC = () => {
     <section className="relative w-full max-w-lg mx-auto px-4 py-6">
       <div className="rounded-3xl royal-card p-8 text-center relative overflow-hidden">
         {/* Header Badge */}
-        <div className="inline-flex p-3 rounded-full bg-[#8B1E3F] text-[#FCF6BA] shadow-lg mb-4">
+        <div className="inline-flex p-3 rounded-full bg-[#8B1E3F] text-[#FFF7F4] shadow-lg mb-4">
           <MapPin className="w-6 h-6" />
         </div>
 
@@ -34,13 +34,13 @@ export const LocationCard: React.FC = () => {
 
         {/* Date & Time Pills */}
         <div className="grid grid-cols-2 gap-3 mb-8">
-          <div className="p-3.5 rounded-2xl bg-white border border-[#D4AF37]/40 flex flex-col items-center shadow-sm">
+          <div className="p-3.5 rounded-2xl bg-white border border-[#C48B9F]/40 flex flex-col items-center shadow-sm">
             <Calendar className="w-4 h-4 text-[#8B1E3F] mb-1" />
             <span className="font-sans-clean text-[10px] uppercase text-[#8B1E3F] font-bold">Датасы</span>
             <span className="font-serif-title font-bold text-lg text-[#5C0E20]">12.09.2026</span>
           </div>
 
-          <div className="p-3.5 rounded-2xl bg-white border border-[#D4AF37]/40 flex flex-col items-center shadow-sm">
+          <div className="p-3.5 rounded-2xl bg-white border border-[#C48B9F]/40 flex flex-col items-center shadow-sm">
             <Clock className="w-4 h-4 text-[#8B1E3F] mb-1" />
             <span className="font-sans-clean text-[10px] uppercase text-[#8B1E3F] font-bold">Убактысы</span>
             <span className="font-serif-title font-bold text-lg text-[#5C0E20]">16:00</span>
@@ -50,9 +50,9 @@ export const LocationCard: React.FC = () => {
         {/* Button: "КАРТАНЫ АЧУУ" */}
         <button
           onClick={() => setShowMapModal(true)}
-          className="w-full py-4 px-6 rounded-2xl burgundy-gradient-bg text-[#FCF6BA] font-serif-title text-xl font-bold tracking-wider shadow-lg hover:shadow-xl border border-[#D4AF37] transition-all flex items-center justify-center gap-3 active:scale-98 cursor-pointer"
+          className="w-full py-4 px-6 rounded-2xl burgundy-gradient-bg text-[#FFF7F4] font-serif-title text-xl font-bold tracking-wider shadow-lg hover:shadow-xl border border-[#C48B9F] transition-all flex items-center justify-center gap-3 active:scale-98 cursor-pointer"
         >
-          <Navigation className="w-5 h-5 text-[#FCF6BA]" />
+          <Navigation className="w-5 h-5 text-[#FFF7F4]" />
           <span>КАРТАНЫ АЧУУ</span>
         </button>
       </div>
@@ -60,7 +60,7 @@ export const LocationCard: React.FC = () => {
       {/* Map Modal Window */}
       {showMapModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm animate-fadeIn">
-          <div className="relative w-full max-w-md rounded-3xl bg-[#FAF5EF] p-6 shadow-2xl border-2 border-[#D4AF37]">
+          <div className="relative w-full max-w-md rounded-3xl bg-[#FDF8F5] p-6 shadow-2xl border-2 border-[#C48B9F]">
             <button
               onClick={() => setShowMapModal(false)}
               className="absolute top-4 right-4 p-2 rounded-full bg-[#8B1E3F]/10 text-[#8B1E3F] hover:bg-[#8B1E3F]/20 transition-colors"
@@ -76,7 +76,7 @@ export const LocationCard: React.FC = () => {
             </p>
 
             {/* Embedded Interactive Google Map */}
-            <div className="w-full h-48 rounded-2xl overflow-hidden border border-[#D4AF37] mb-5 shadow-inner">
+            <div className="w-full h-48 rounded-2xl overflow-hidden border border-[#C48B9F] mb-5 shadow-inner">
               <iframe
                 title="Ресторан Алтын Казына"
                 width="100%"
