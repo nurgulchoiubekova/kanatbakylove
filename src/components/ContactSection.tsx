@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle, Heart } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
-  const organizerPhone = "996770123456"; // WhatsApp contact link
+  const organizerPhone = "996509608808"; // WhatsApp contact link
   const prefilledMessage = encodeURIComponent("Саламатсызбы! Канатбек менен Бактыгүлдүн үйлөнүү үлпөт той-кечеси боюнча суроом бар эле.");
 
   return (
