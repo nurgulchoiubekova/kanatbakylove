@@ -151,12 +151,12 @@ export const Envelope3D: React.FC<Envelope3DProps> = ({ onOpen, isOpen }) => {
 
       {/* Instruction text below envelope */}
       <div className="mt-8 text-center z-10 animate-pulse">
-        <p className="font-serif-title text-xl sm:text-2xl text-[#FFF7F4] tracking-wider mb-2 drop-shadow-md">
+        <p className="font-serif-title text-xl sm:text-2xl text-[#6E1023] tracking-wider mb-2">
           Конвертти ачуу үчүн басыңыз
         </p>
         <div className="flex justify-center items-center gap-1.5 text-[#C48B9F]">
           <span className="inline-block animate-bounce text-xl">✨</span>
-          <span className="font-sans-clean text-xs uppercase tracking-widest text-[#EBD9D3]/90">
+          <span className="font-sans-clean text-xs uppercase tracking-widest text-[#8B1E3F]/70">
             Сургуч мөөрдү басыңыз
           </span>
           <span className="inline-block animate-bounce text-xl">✨</span>

@@ -57,7 +57,7 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
           Сизди күтөбүз!
         </h2>
 
-        <p className="font-serif-title text-[#FFF7F4]/90 text-lg sm:text-xl mb-8 font-semibold tracking-wide">
+        <p className="font-serif-title text-[#6E1023]/90 text-lg sm:text-xl mb-8 font-semibold tracking-wide">
           Канатбек & Бактыгүл — 12.09.2026
         </p>
 
@@ -82,7 +82,7 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
 
           <button
             onClick={onOpenAdmin}
-            className="px-5 py-2.5 rounded-full bg-[#FDF8F5]/10 hover:bg-[#FDF8F5]/20 text-[#FFF7F4] border border-[#C48B9F]/50 text-sm font-sans-clean font-medium flex items-center gap-2 transition-all active:scale-95 cursor-pointer"
+            className="px-5 py-2.5 rounded-full bg-white/70 hover:bg-white text-[#6E1023] border border-[#C48B9F]/60 text-sm font-sans-clean font-medium flex items-center gap-2 transition-all active:scale-95 cursor-pointer"
           >
             <ListFilter className="w-4 h-4 text-[#C48B9F]" />
             <span>Коноктордун тизмеси</span>
@@ -90,7 +90,7 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
         </div>
 
         {/* Custom Audio Uploader Section at the bottom */}
-        <div className="w-full mt-4 p-5 rounded-3xl bg-[#1A060B] border border-[#C48B9F]/40 text-left mb-8 shadow-2xl">
+        <div className="w-full mt-4 p-5 rounded-3xl bg-[#6E1023] border border-[#C48B9F]/40 text-left mb-8 shadow-xl">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2 text-[#FFF7F4]">
               <Music className="w-5 h-5 text-[#C48B9F]" />
@@ -160,11 +160,11 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
                     placeholder="https://example.com/song.mp3"
                     value={urlInput}
                     onChange={(e) => setUrlInput(e.target.value)}
-                    className="flex-1 px-3 py-2 rounded-xl bg-[#F7EDE8] border border-[#C48B9F]/50 text-[#FFF7F4] placeholder-[#FFF7F4]/30 text-xs focus:outline-none focus:border-[#C48B9F]"
+                    className="flex-1 px-3 py-2 rounded-xl bg-white border border-[#C48B9F]/50 text-[#3D0914] placeholder-[#3D0914]/40 text-xs focus:outline-none focus:border-[#C48B9F]"
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 rounded-xl bg-[#C48B9F] hover:bg-[#b8972e] text-[#F7EDE8] font-sans-clean text-xs font-bold transition-all"
+                    className="px-4 py-2 rounded-xl bg-[#C48B9F] hover:bg-[#a86f83] text-white font-sans-clean text-xs font-bold transition-all"
                   >
                     Сактоо
                   </button>
@@ -187,7 +187,7 @@ export const FooterAndMusic: React.FC<FooterAndMusicProps> = ({
         </div>
 
         {/* Subtle Copyright */}
-        <p className="font-sans-clean text-[10px] text-[#FFF7F4]/40 uppercase tracking-widest">
+        <p className="font-sans-clean text-[10px] text-[#6E1023]/50 uppercase tracking-widest">
           Үйлөнүү той чакыруу баракчасы • 2026
         </p>
       </div>
