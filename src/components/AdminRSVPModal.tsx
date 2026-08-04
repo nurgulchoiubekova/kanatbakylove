@@ -18,9 +18,9 @@ export const AdminRSVPModal: React.FC<AdminRSVPModalProps> = ({ rsvps, onClose, 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-md animate-fadeIn">
-      <div className="relative w-full max-w-lg max-h-[85vh] rounded-3xl bg-[#FDF8F5] p-6 shadow-2xl border-2 border-[#C48B9F] flex flex-col overflow-hidden">
+      <div className="relative w-full max-w-lg max-h-[85vh] rounded-3xl bg-[#FAF5EF] p-6 shadow-2xl border-2 border-[#D4AF37] flex flex-col overflow-hidden">
         {/* Header */}
-        <div className="flex items-center justify-between pb-4 border-b border-[#C48B9F]/40">
+        <div className="flex items-center justify-between pb-4 border-b border-[#D4AF37]/40">
           <div>
             <h3 className="font-serif-title text-2xl font-bold text-[#5C0E20]">
               Той конокторунун тизмеси
@@ -40,7 +40,7 @@ export const AdminRSVPModal: React.FC<AdminRSVPModalProps> = ({ rsvps, onClose, 
 
         {/* Stats Summary Grid */}
         <div className="grid grid-cols-3 gap-3 my-4">
-          <div className="p-3 rounded-2xl bg-[#8B1E3F]/10 border border-[#C48B9F]/30 text-center">
+          <div className="p-3 rounded-2xl bg-[#8B1E3F]/10 border border-[#D4AF37]/30 text-center">
             <span className="font-sans-clean text-[10px] uppercase text-[#8B1E3F]">Жалпы адам</span>
             <p className="font-serif-title font-bold text-2xl text-[#5C0E20]">{totalAttendingGuests}</p>
           </div>
@@ -68,7 +68,7 @@ export const AdminRSVPModal: React.FC<AdminRSVPModalProps> = ({ rsvps, onClose, 
             rsvps.map((item) => (
               <div
                 key={item.id}
-                className="p-4 rounded-2xl bg-white border border-[#C48B9F]/40 shadow-sm flex items-center justify-between"
+                className="p-4 rounded-2xl bg-white border border-[#D4AF37]/40 shadow-sm flex items-center justify-between"
               >
                 <div>
                   <h5 className="font-serif-title font-bold text-lg text-[#3D0914]">
@@ -98,7 +98,7 @@ export const AdminRSVPModal: React.FC<AdminRSVPModalProps> = ({ rsvps, onClose, 
         </div>
 
         {/* Footer actions */}
-        <div className="pt-4 border-t border-[#C48B9F]/40 flex justify-between items-center">
+        <div className="pt-4 border-t border-[#D4AF37]/40 flex justify-between items-center">
           {rsvps.length > 0 && (
             <button
               onClick={onClear}

@@ -41,7 +41,7 @@ export const Timeline: React.FC = () => {
           <p className="font-sans-clean text-xs uppercase tracking-widest text-[#8B1E3F]">
             Тойдун убактысы
           </p>
-          <div className="w-16 h-0.5 bg-[#C48B9F] mx-auto mt-2"></div>
+          <div className="w-16 h-0.5 bg-[#D4AF37] mx-auto mt-2"></div>
         </div>
 
         {/* Curved Flow Line (S-curve matching video) */}
@@ -62,12 +62,12 @@ export const Timeline: React.FC = () => {
               return (
                 <div key={index} className="flex items-center gap-5 group">
                   {/* Heart Badge along line */}
-                  <div className="relative flex-shrink-0 w-12 h-12 rounded-full burgundy-gradient-bg border-2 border-[#C48B9F] shadow-lg flex items-center justify-center text-[#FFF7F4] group-hover:scale-110 transition-transform">
-                    <IconComponent className="w-5 h-5 text-[#FFF7F4]" />
+                  <div className="relative flex-shrink-0 w-12 h-12 rounded-full burgundy-gradient-bg border-2 border-[#D4AF37] shadow-lg flex items-center justify-center text-[#FCF6BA] group-hover:scale-110 transition-transform">
+                    <IconComponent className="w-5 h-5 text-[#FCF6BA]" />
                   </div>
 
                   {/* Text Details */}
-                  <div className="flex-1 p-4 rounded-2xl bg-white/80 border border-[#C48B9F]/40 shadow-sm transition-all hover:shadow-md">
+                  <div className="flex-1 p-4 rounded-2xl bg-white/80 border border-[#D4AF37]/40 shadow-sm transition-all hover:shadow-md">
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-serif-title font-bold text-2xl text-[#8B1E3F]">
                         {event.time}

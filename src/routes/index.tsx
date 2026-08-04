@@ -112,11 +112,11 @@ function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F7EDE8] text-[#4A1521] font-serif-title antialiased selection:bg-[#8B1E3F] selection:text-white flex flex-col justify-between">
+    <div className="min-h-screen bg-[#2D0B13] text-[#4A1521] font-serif-title antialiased selection:bg-[#8B1E3F] selection:text-white flex flex-col justify-between">
       {!isEnvelopeOpen && <Envelope3D onOpen={handleOpenEnvelope} isOpen={isEnvelopeOpen} />}
 
       {isEnvelopeOpen && (
-        <div className="w-full max-w-md mx-auto bg-[#F7EDE8] shadow-2xl overflow-hidden min-h-screen flex flex-col justify-between animate-fadeIn transition-opacity duration-1000">
+        <div className="w-full max-w-md mx-auto bg-[#2D0B13] shadow-2xl overflow-hidden min-h-screen flex flex-col justify-between animate-fadeIn transition-opacity duration-1000">
           <main className="w-full space-y-4">
             <HeroVideo isMusicPlaying={isMusicPlaying} onToggleMusic={handleToggleMusic} />
             <InvitationText />

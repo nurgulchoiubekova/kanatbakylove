@@ -92,7 +92,7 @@ export const CountdownTimer: React.FC = () => {
           <svg viewBox="0 0 400 30" className="w-full h-full fill-[#8B1E3F]">
             <pattern id="lacePattern" width="20" height="20" patternUnits="userSpaceOnUse">
               <circle cx="10" cy="10" r="3" fill="none" stroke="#8B1E3F" strokeWidth="1" />
-              <path d="M0,10 Q10,0 20,10 Q10,20 0,10 Z" fill="none" stroke="#C48B9F" strokeWidth="0.8" />
+              <path d="M0,10 Q10,0 20,10 Q10,20 0,10 Z" fill="none" stroke="#D4AF37" strokeWidth="0.8" />
             </pattern>
             <rect width="100%" height="20" fill="url(#lacePattern)" />
           </svg>
