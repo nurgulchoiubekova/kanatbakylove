@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export const CountdownTimer: React.FC = () => {
-  // Target wedding date: September 12, 2026 at 16:00
-  const targetDate = new Date('2026-09-12T16:00:00');
+  // Target wedding date: October 13, 2026 at 16:00
+  const targetDate = new Date('2026-10-13T16:00:00');
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

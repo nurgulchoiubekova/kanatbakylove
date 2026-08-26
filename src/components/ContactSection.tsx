@@ -2,8 +2,8 @@ import React from 'react';
 import { MessageCircle, Heart } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
-  const organizerPhone = "996509608808"; // WhatsApp contact link
-  const prefilledMessage = encodeURIComponent("Саламатсызбы! Канатбек менен Бактыгүлдүн үйлөнүү үлпөт той-кечеси боюнча суроом бар эле.");
+  const organizerPhone = "996700484888"; // WhatsApp contact link (+996 700 484 888)
+  const prefilledMessage = encodeURIComponent("Саламатсызбы! Нарынбек менен Бегимайдын үйлөнүү үлпөт той-кечеси боюнча суроом бар эле.");
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6 text-center">
@@ -12,12 +12,16 @@ export const ContactSection: React.FC = () => {
           Деталдар:
         </h3>
 
-        <p className="font-serif-title text-base sm:text-lg text-[#3D0914] mb-6 leading-relaxed max-w-md">
+        <p className="font-serif-title text-base sm:text-lg text-[#3D0914] mb-4 leading-relaxed max-w-md">
           Эгерде сиздерде кандайдыр бир суроолор, каалоолор, белектер же сюрприздер болсо, биздин уюштуруучубуз менен байланыша аласыздар:
         </p>
 
+        <p className="font-serif-title font-bold text-xl text-[#8B1E3F] mb-6">
+          +996 700 484 888
+        </p>
+
         {/* WhatsApp Floating Button with Flower Icon */}
-        <div className="relative mb-2">
+        <div className="relative mb-2 w-full">
           {/* Burgundy Flower Decoration behind WhatsApp icon */}
           <div className="w-16 h-16 rounded-full bg-[#8B1E3F]/10 border-2 border-[#D4AF37] flex items-center justify-center mb-4 mx-auto">
             <Heart className="w-8 h-8 text-[#8B1E3F] fill-[#8B1E3F]" />

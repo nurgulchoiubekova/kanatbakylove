@@ -14,7 +14,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({ isMusicPlaying, onToggleMu
       <div className="relative z-30 w-full p-4 flex justify-between items-center">
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2D0B13]/80 backdrop-blur-md border border-[#D4AF37]/50 text-[#FCF6BA] text-xs font-sans-clean shadow-lg">
           <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] animate-spin" style={{ animationDuration: '8s' }} />
-          <span>12.09.2026</span>
+          <span>13.10.2026</span>
         </div>
 
         {/* Music Toggle Button */}
@@ -44,7 +44,7 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({ isMusicPlaying, onToggleMu
       {/* Background Invitation Card Image */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <img
-          src={heroImage.url}
+          src="https://i.pinimg.com/originals/50/91/39/5091394ba3a417716680afc358962fdf.jpg"
           alt="Той чакыруу фон"
           className="w-full h-full object-cover object-center"
         />
@@ -62,16 +62,16 @@ export const HeroVideo: React.FC<HeroVideoProps> = ({ isMusicPlaying, onToggleMu
 
         {/* Couple Names */}
         <h1 className="font-script text-5xl sm:text-6xl font-bold gold-gradient-text my-2 leading-tight drop-shadow-lg tracking-wide hover:scale-105 transition-transform">
-          Канатбек & Бактыгүл
+          Нарынбек & Бегимай
         </h1>
 
         {/* Date */}
         <div className="mt-4 flex flex-col items-center">
           <span className="font-serif-title text-2xl font-bold text-[#5C0E20]">
-            12.09.2026
+            13.10.2026
           </span>
           <span className="font-sans-clean text-[10px] uppercase tracking-widest text-[#5C0E20]/80 font-semibold">
-            Ишемби
+            Шейшемби
           </span>
         </div>
       </div>

@@ -9,15 +9,9 @@ export const Organizers: React.FC = () => {
         </h3>
 
         <div className="space-y-3 my-4">
-          <div className="py-2.5 px-4 rounded-2xl bg-white/90 border border-[#D4AF37]/40 shadow-sm">
+          <div className="py-3 px-6 rounded-2xl bg-white/90 border border-[#D4AF37]/40 shadow-sm">
             <p className="font-script text-3xl sm:text-4xl text-[#8B1E3F] font-bold">
-              Төлөнбек & Эркингүл
-            </p>
-          </div>
-
-          <div className="py-2.5 px-4 rounded-2xl bg-white/90 border border-[#D4AF37]/40 shadow-sm">
-            <p className="font-script text-3xl sm:text-4xl text-[#8B1E3F] font-bold">
-              Руслан & Жыпариза
+              Бүбүкан & Арген
             </p>
           </div>
         </div>

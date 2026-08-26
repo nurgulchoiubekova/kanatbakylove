@@ -80,6 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "viewport",
         content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
       },
+      { title: "Нарынбек менен Бегимайдын үлпөт тоюна чакыруу" },
+      { property: "og:title", content: "Нарынбек менен Бегимайдын үлпөт тоюна чакыруу" },
+      { property: "og:description", content: "Сизди үйлөнүү үлпөт тоюбузга чакырабыз!" },
+      { property: "og:image", content: "https://i.pinimg.com/originals/50/91/39/5091394ba3a417716680afc358962fdf.jpg" },
     ],
     links: [
       {

@@ -8,15 +8,15 @@ import { Organizers } from "@/components/Organizers";
 import { LocationCard } from "@/components/LocationCard";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { ContactSection } from "@/components/ContactSection";
-import { RSVPForm } from "@/components/RSVPForm";
+import { WishesSection } from "@/components/WishesSection";
 import { FooterAndMusic } from "@/components/FooterAndMusic";
-import { AdminRSVPModal } from "@/components/AdminRSVPModal";
-import type { RSVPResponse } from "@/types";
+import { AdminWishesModal } from "@/components/AdminWishesModal";
+import type { Wish } from "@/types";
 import { RomanticMusicPlayer } from "@/utils/audio";
 
-const TITLE = "Үйлөнүү той — Канатбек & Бактыгүл";
+const TITLE = "Үйлөнүү той — Нарынбек & Бегимай";
 const DESCRIPTION =
-  "Канатбек менен Бактыгүлдүн үйлөнүү тоюна чакыруу — 12.09.2026, «Алтын Казына» рестораны, Бишкек.";
+  "Нарынбек менен Бегимайдын үйлөнүү тоюна чакыруу — 13.10.2026, «Мейкин» рестораны.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,7 +36,7 @@ function Index() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [currentTrackName, setCurrentTrackName] = useState("Alex Warren - Ordinary");
-  const [rsvps, setRsvps] = useState<RSVPResponse[]>([]);
+  const [wishes, setWishes] = useState<Wish[]>([]);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   const musicPlayerRef = useRef<RomanticMusicPlayer | null>(null);
@@ -45,12 +45,12 @@ function Index() {
     musicPlayerRef.current = new RomanticMusicPlayer();
     setCurrentTrackName(musicPlayerRef.current.getCurrentTrackName());
 
-    const saved = localStorage.getItem("wedding_rsvps");
+    const saved = localStorage.getItem("wedding_wishes");
     if (saved) {
       try {
-        setRsvps(JSON.parse(saved));
+        setWishes(JSON.parse(saved));
       } catch (e) {
-        console.error("Error loading saved RSVPs", e);
+        console.error("Error loading saved wishes", e);
       }
     }
   }, []);
@@ -102,13 +102,19 @@ function Index() {
     setIsMusicPlaying(true);
   };
 
-  const handleRSVPSubmitted = (newRSVP: RSVPResponse) => {
-    setRsvps((prev) => [newRSVP, ...prev]);
+  const handleWishSubmitted = (newWish: Wish) => {
+    setWishes((prev) => [newWish, ...prev]);
   };
 
-  const handleClearRSVPs = () => {
-    localStorage.removeItem("wedding_rsvps");
-    setRsvps([]);
+  const handleClearWishes = () => {
+    localStorage.removeItem("wedding_wishes");
+    setWishes([]);
+  };
+
+  const handleDeleteWish = (id: string) => {
+    const updated = wishes.filter((w) => w.id !== id);
+    setWishes(updated);
+    localStorage.setItem("wedding_wishes", JSON.stringify(updated));
   };
 
   return (
@@ -125,7 +131,7 @@ function Index() {
             <LocationCard />
             <CountdownTimer />
             <ContactSection />
-            <RSVPForm onRSVPSubmitted={handleRSVPSubmitted} />
+            <WishesSection onWishSubmitted={handleWishSubmitted} />
           </main>
 
           <FooterAndMusic
@@ -141,10 +147,11 @@ function Index() {
       )}
 
       {isAdminOpen && (
-        <AdminRSVPModal
-          rsvps={rsvps}
+        <AdminWishesModal
+          wishes={wishes}
           onClose={() => setIsAdminOpen(false)}
-          onClear={handleClearRSVPs}
+          onClear={handleClearWishes}
+          onDeleteWish={handleDeleteWish}
         />
       )}
     </div>

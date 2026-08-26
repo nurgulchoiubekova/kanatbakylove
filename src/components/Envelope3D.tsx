@@ -137,9 +137,9 @@ export const Envelope3D: React.FC<Envelope3DProps> = ({ onOpen, isOpen }) => {
               {/* Outer Seal Metallic Rim */}
               <div className="absolute inset-1 rounded-full border border-[#D4AF37]/70 pointer-events-none"></div>
 
-              {/* Gold Monogram "К & Б" */}
+              {/* Gold Monogram "Н & Б" */}
               <div className="text-center font-script text-2xl sm:text-3xl font-bold gold-gradient-text tracking-wider leading-none drop-shadow-md select-none">
-                К & Б
+                Н & Б
               </div>
 
               {/* Decorative Ring */}

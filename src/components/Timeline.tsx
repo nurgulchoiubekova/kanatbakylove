@@ -12,14 +12,8 @@ export const Timeline: React.FC = () => {
     {
       time: '17:00',
       title: 'ТОЙДУН БАШТАЛЫШЫ',
-      subTitle: 'Салтанат',
+      subTitle: 'Салтанаттуу ачылышы',
       icon: Heart,
-    },
-    {
-      time: '18:00',
-      title: 'БАНКЕТ',
-      subTitle: 'Праздничный ужин',
-      icon: Utensils,
     },
     {
       time: '22:00',

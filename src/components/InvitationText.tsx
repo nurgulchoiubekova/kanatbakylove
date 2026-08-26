@@ -2,10 +2,10 @@ import React from 'react';
 import { Heart } from 'lucide-react';
 
 export const InvitationText: React.FC = () => {
-  // Days for September 2026 calendar view
-  // Sept 12, 2026 is Saturday (Ишемби)
-  const daysOfWeek = ['Иш', 'Ше', 'Ша', 'Тө', 'Жу', 'Иш', 'Жек'];
-  const septemberDays = Array.from({ length: 30 }, (_, i) => i + 1);
+  // Days for October 2026 calendar view
+  // Oct 13, 2026 is Tuesday (Шейшемби)
+  const daysOfWeek = ['Дүй', 'Шей', 'Шар', 'Төр', 'Жум', 'Ише', 'Жек'];
+  const octoberDays = Array.from({ length: 31 }, (_, i) => i + 1);
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-8">
@@ -33,14 +33,14 @@ export const InvitationText: React.FC = () => {
 
         <div className="space-y-4 font-serif-title text-lg sm:text-xl text-[#3D0914] leading-relaxed">
           <p>
-            Сиздерди балдарыбыз <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Канатбек</span> менен <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Бактыгүлдүн</span> үйлөнүү үлпөт тоюна арналган салтанатка келип, кадырлуу коногубуз болууга чакырабыз!
+            Сиздерди балдарыбыз <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Нарынбек</span> менен <span className="font-bold text-[#8B1E3F] text-2xl sm:text-3xl font-serif-title border-b-2 border-[#D4AF37]">Бегимайдын</span> үйлөнүү үлпөт тоюна арналган салтанатка келип, кадырлуу коногубуз болууга чакырабыз!
           </p>
         </div>
 
-        {/* September 2026 Calendar Strip (matching video 00:11) */}
+        {/* October 2026 Calendar Strip */}
         <div className="mt-10 pt-6 border-t border-[#D4AF37]/30">
           <h4 className="font-script text-4xl text-[#8B1E3F] font-bold mb-4">
-            Сентябрь
+            Октябрь
           </h4>
 
           {/* Days of Week Header */}
@@ -52,11 +52,11 @@ export const InvitationText: React.FC = () => {
 
           {/* Days Grid */}
           <div className="grid grid-cols-7 gap-1 text-center font-serif-title text-sm font-semibold text-[#3D0914]">
-            {/* September 1, 2026 starts on Tuesday (offset 1 day) */}
-            <div className="col-span-1"></div>
+            {/* October 1, 2026 starts on Thursday (offset 3 days: Mon, Tue, Wed) */}
+            <div className="col-span-3"></div>
 
-            {septemberDays.map((day) => {
-              const isWeddingDay = day === 12;
+            {octoberDays.map((day) => {
+              const isWeddingDay = day === 13;
               return (
                 <div
                   key={day}
@@ -66,7 +66,7 @@ export const InvitationText: React.FC = () => {
                 >
                   {isWeddingDay ? (
                     <div className="relative flex items-center justify-center w-8 h-8 rounded-full bg-[#8B1E3F] text-[#FCF6BA] font-bold shadow-md animate-pulse">
-                      <span>12</span>
+                      <span>13</span>
                       <Heart className="absolute -top-1 -right-1 w-3.5 h-3.5 fill-[#D4AF37] text-[#D4AF37]" />
                     </div>
                   ) : (

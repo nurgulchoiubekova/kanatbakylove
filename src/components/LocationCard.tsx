@@ -4,12 +4,12 @@ import { MapPin, Navigation, Calendar, Clock, X, ExternalLink } from 'lucide-rea
 export const LocationCard: React.FC = () => {
   const [showMapModal, setShowMapModal] = useState(false);
 
-  const restaurantName = "«Алтын Казына» рестораны";
-  const address = "Бишкек ш., Проспект Победы, 351";
+  const restaurantName = "«Мейкин» рестораны";
+  const address = "«Мейкин» рестораны";
   
   // Direct 2GIS and Google Maps URLs
-  const gisLink = "https://2gis.kg/bishkek/search/%D0%90%D0%BB%D1%82%D1%8B%D0%BD%20%D0%9A%D0%B0%D0%B7%D1%8B%D0%BD%D0%B0";
-  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Алтын Казына ресторан " + address)}`;
+  const gisLink = "https://2gis.kg/search/%D0%9C%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD";
+  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Мейкин ресторан")}`;
 
   return (
     <section className="relative w-full max-w-lg mx-auto px-4 py-6">
@@ -37,7 +37,7 @@ export const LocationCard: React.FC = () => {
           <div className="p-3.5 rounded-2xl bg-white border border-[#D4AF37]/40 flex flex-col items-center shadow-sm">
             <Calendar className="w-4 h-4 text-[#8B1E3F] mb-1" />
             <span className="font-sans-clean text-[10px] uppercase text-[#8B1E3F] font-bold">Датасы</span>
-            <span className="font-serif-title font-bold text-lg text-[#5C0E20]">12.09.2026</span>
+            <span className="font-serif-title font-bold text-lg text-[#5C0E20]">13.10.2026</span>
           </div>
 
           <div className="p-3.5 rounded-2xl bg-white border border-[#D4AF37]/40 flex flex-col items-center shadow-sm">

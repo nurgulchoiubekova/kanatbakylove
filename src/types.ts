@@ -1,3 +1,10 @@
+export interface Wish {
+  id: string;
+  name: string;
+  wish: string;
+  submittedAt: string;
+}
+
 export interface RSVPResponse {
   id: string;
   name: string;
@@ -12,3 +19,4 @@ export interface TimelineEvent {
   subTitle?: string;
   iconName: 'users' | 'rings' | 'utensils' | 'sparkles' | 'glass';
 }
+
