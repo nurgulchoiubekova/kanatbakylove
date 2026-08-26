@@ -5,8 +5,8 @@ export const LocationCard: React.FC = () => {
   const [showMapModal, setShowMapModal] = useState(false);
 
   const restaurantName = "«Мейкин» рестораны";
-  const address = "«Мейкин» рестораны";
-  
+  const address = "7-Апрель көчөсү, 2/3";
+
   // Direct 2GIS and Google Maps URLs
   const gisLink = "https://2gis.kg/search/%D0%9C%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD";
   const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Мейкин ресторан")}`;

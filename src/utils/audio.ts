@@ -71,7 +71,7 @@ export function playEnvelopeOpenSound() {
   }
 }
 
-const DEFAULT_MP3_URL = "/audio/ordinary.mp3";
+const DEFAULT_MP3_URL = "/audio/eki-zhash.mp3";
 
 /**
  * Romantic Music Controller supporting both MP3 audio files (uploaded or URL) and Web Audio fallback
