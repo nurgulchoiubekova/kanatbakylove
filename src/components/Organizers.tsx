@@ -11,7 +11,7 @@ export const Organizers: React.FC = () => {
         <div className="space-y-3 my-4">
           <div className="py-3 px-6 rounded-2xl bg-white/90 border border-[#D4AF37]/40 shadow-sm">
             <p className="font-script text-3xl sm:text-4xl text-[#8B1E3F] font-bold">
-              Бүбүкан & Арген
+              Качкындын үй-бүлөсү
             </p>
           </div>
         </div>
